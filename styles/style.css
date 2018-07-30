@@ -298,14 +298,16 @@ header {
 .button {
   font-size: 20px;
   font-size: 2rem;
-  background-color: #DA331D;
   letter-spacing: 4.0px;
   font-weight: 600;
-  color: #FFFFFF;
   padding: 10px 40px;
   border: none;
   border-radius: 30px;
-  width: 170px; }
+  width: 170px;
+  color: #FFFFFF; }
+
+.button--orange {
+  background-color: #DA331D; }
 
 .aboutUs {
   text-align: center; }
@@ -376,3 +378,31 @@ header {
   .aboutUs__content__text p {
     font-size: 24px;
     font-size: 2.4rem; }
+
+.welcome {
+  background-color: #E5BF4B; }
+  .welcome .wrapper h2 {
+    font-size: 40px;
+    font-size: 4rem; }
+  .welcome .wrapper p {
+    font-size: 24px;
+    font-size: 2.4rem; }
+
+.welcome__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0; }
+  .welcome__content p {
+    margin: 50px 0; }
+
+.button--black {
+  background-color: #000000; }

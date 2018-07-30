@@ -92,14 +92,17 @@ header {
 
 .button {
     @include fontSize(20);
-    background-color: $orange;
     letter-spacing: 4.0px;
     font-weight: 600;
-    color: #FFFFFF;
     padding: 10px 40px;
     border: none;
     border-radius: 30px;
     width: 170px;
+    color: #FFFFFF;
+}
+
+.button--orange {
+    background-color: $orange;
 }
 
 // END OF HEADER SECTION STYLING
@@ -155,3 +158,36 @@ header {
 }
 
 // END OF ABOUT US SECTION STYLING
+
+// START OF WELCOME SECTION
+
+.welcome {
+    background-color: $gold;
+    .wrapper {
+        h2 {
+            @include fontSize(40);
+        }
+        p {
+            @include fontSize(24);
+        }
+    }
+}
+
+.welcome__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    p {
+        margin: 50px 0;
+    }
+}
+
+.button--black {
+    background-color: #000000;
+}
+
+
+
+// END OF WELCOME SECTION
