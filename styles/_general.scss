@@ -1,0 +1,46 @@
+$black: #2A2A2A;
+$gold: #E5BF4B;
+$orange: #DA331D;
+$grey: #D2CFCF;
+
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin sectionBackground($path) {
+	background-image: url($path);
+	background-size: cover;
+	background-position: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, a, button {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Lora", serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    @include fontSize(16);
+    font-family: "Lora", serif;
+}
