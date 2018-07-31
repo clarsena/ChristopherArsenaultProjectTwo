@@ -29,6 +29,10 @@ h2 {
     @include fontSize(40);
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
     width: 100%;
     max-width: 1140px;
@@ -222,6 +226,27 @@ header {
 
 // START OF REVIEWS SECTION
 
+.reviews {
+    background-color: $black;
+    color: $grey;
+}
 
+.reviews__content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p {
+        @include fontSize(18);
+        margin-top: 35px;
+    }
+    p:nth-of-type(1) {
+        width: 55%;
+    }
+    p:nth-of-type(2) {
+        font-style: italic;
+    }
+}
 
 // END OF REVIEWS SECTION

@@ -216,6 +216,9 @@ h2 {
   font-size: 40px;
   font-size: 4rem; }
 
+img {
+  max-width: 100%; }
+
 .wrapper {
   width: 100%;
   max-width: 1140px;
@@ -445,3 +448,29 @@ header {
     font-size: 1.8rem;
     font-family: "Lora", serif;
     width: 60%; }
+
+.reviews {
+  background-color: #2A2A2A;
+  color: #D2CFCF; }
+
+.reviews__content {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+  .reviews__content p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-top: 35px; }
+  .reviews__content p:nth-of-type(1) {
+    width: 55%; }
+  .reviews__content p:nth-of-type(2) {
+    font-style: italic; }
