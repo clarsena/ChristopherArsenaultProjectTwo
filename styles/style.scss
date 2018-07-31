@@ -102,6 +102,7 @@ header {
 
 .button {
     @include fontSize(20);
+    text-transform: uppercase;
     letter-spacing: 4.0px;
     font-weight: 600;
     padding: 10px 40px;
@@ -301,4 +302,23 @@ header {
 
 // END OF REVIEWS SECTION STYLING
 
-// START OF ASK QUESTION SECTION STRYLING
+// START OF ASK QUESTION SECTION STYLING
+
+.askQuestion__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    input[type='text'] {
+        margin: 50px 0;
+        width: 80%;
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #000000;
+        @include fontSize(18);
+        font-family: "Lora", serif;
+        padding: 10px;
+    }
+}
+
+// END OF ASK QUESTION STYLING
