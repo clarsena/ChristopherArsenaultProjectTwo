@@ -25,25 +25,6 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 @import "general";
 
-h2 {
-    @include fontSize(40);
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-.wrapper {
-    width: 100%;
-    max-width: 1140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 75px 0;
-}
-
 .aboutUs__content, .welcome__content, .services__content, .reviews__content, .events__content, .askQuestion__form, .stats__content, .blog__content, .footer__content, .footer__content__cell__gallery, .bottomNav {
     display: flex;
     width: 100%;
@@ -72,7 +53,7 @@ header {
 }
 
 .header__topRow__right {
-    flex: 0 1 55%;
+    flex: 1 1 55%;
     align-self: baseline;
 }
 
@@ -246,6 +227,10 @@ header {
     }
 }
 
+// END OF REVIEWS SECTION STYLING
+
+// START OF EVENTS SECTION STYLING
+
 .events__content__cell {
     flex: 0 1 calc(100% / 3);
     img {
@@ -291,7 +276,7 @@ header {
     }
 }
 
-// END OF REVIEWS SECTION STYLING
+// END OF EVENTS SECTION STYLING
 
 // START OF ASK QUESTION SECTION STYLING
 
@@ -389,7 +374,7 @@ footer {
 }
 
 .footer__content__cell {
-    width: 30%;
+    width: calc((100% / 3) - 25px);
     h3 {
         @include fontSize(26);
         margin-bottom: 25px;
@@ -417,7 +402,7 @@ footer {
 }
 
 .emailSubscribe__email {
-    width: 80%;
+    width: 85%;
     @include fontSize(14);
     padding: 5px 0 5px 15px;
     border: 1px solid #FFFFFF;
@@ -433,7 +418,7 @@ footer {
     position: absolute;
     @include fontSize(12);
     bottom: 7px;
-    right: 24%;
+    right: 20%;
 }
 
 .footer__content__cell__gallery {
@@ -461,3 +446,5 @@ footer {
 }
 
 // END OF FOOTER SECTION STYLING
+
+@import "media";

@@ -28,6 +28,10 @@ h1, h2, h3, h4, a, button {
     text-transform: uppercase;
 }
 
+h2 {
+    @include fontSize(40);
+}
+
 p {
     font-family: "Lora", serif;
 }
@@ -43,4 +47,19 @@ a {
 body {
     @include fontSize(16);
     font-family: "Lora", serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 75px 0;
 }
