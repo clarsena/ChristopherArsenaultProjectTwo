@@ -321,4 +321,37 @@ header {
     }
 }
 
-// END OF ASK QUESTION STYLING
+// END OF ASK QUESTION SECTION STYLING
+
+// START OF STATS SECTION STYLING
+
+.stats {
+    background-color: $gold;
+}
+
+.stats__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats__content__cell {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    i {
+        @include fontSize(50);
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        @include fontSize(28);
+    }
+    p {
+        @include fontSize(24);
+    }
+}
+
+// END OF STATS SECTION STYLING

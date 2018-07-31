@@ -554,3 +554,38 @@ header {
     font-size: 1.8rem;
     font-family: "Lora", serif;
     padding: 10px; }
+
+.stats {
+  background-color: #E5BF4B; }
+
+.stats__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.stats__content__cell {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 25px 0; }
+  .stats__content__cell i {
+    font-size: 50px;
+    font-size: 5rem;
+    margin-bottom: 25px; }
+  .stats__content__cell h3 {
+    font-size: 28px;
+    font-size: 2.8rem; }
+  .stats__content__cell p {
+    font-size: 24px;
+    font-size: 2.4rem; }
