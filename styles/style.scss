@@ -31,6 +31,7 @@ h2 {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 .wrapper {
@@ -167,7 +168,7 @@ header {
 
 // END OF ABOUT US SECTION STYLING
 
-// START OF WELCOME SECTION
+// START OF WELCOME SECTION STYLING
 
 .welcome {
     background-color: $gold;
@@ -193,9 +194,9 @@ header {
     background-color: #000000;
 }
 
-// END OF WELCOME SECTION
+// END OF WELCOME SECTION STYLING
 
-// START OF SERVICES SECTION
+// START OF SERVICES SECTION STYLING
 
 .services__content {
     width: 100%;
@@ -217,14 +218,13 @@ header {
     }
     p {
         @include fontSize(18);
-        font-family: "Lora", serif;
         width: 60%;
     }
 }
 
-// END OF SERVICES SECTION
+// END OF SERVICES SECTION STYLING
 
-// START OF REVIEWS SECTION
+// START OF REVIEWS SECTION STYLING
 
 .reviews {
     background-color: $black;
@@ -249,4 +249,56 @@ header {
     }
 }
 
-// END OF REVIEWS SECTION
+.events__content {
+    width: 100%;
+    display: flex;
+}
+
+.events__content__cell {
+    flex: 0 1 calc(100% / 3);
+    img {
+        height: 100%;
+    }
+    &:nth-of-type(2) {
+        position: relative;
+    }
+}
+
+.events__content__cell__overlay {
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF;
+    text-align: center;
+    p {
+        @include fontSize(18);
+        width: 80%;
+    }
+    h2 {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+        &::after {
+            content: '';
+            width: 60%;
+            height: 1px;
+            border-bottom: 1px solid #FFFFFF;
+            position: absolute;
+            bottom: -50%;
+            left: 20%;
+        }
+    }
+}
+
+// END OF REVIEWS SECTION STYLING
+
+// START OF ASK QUESTION SECTION STRYLING
