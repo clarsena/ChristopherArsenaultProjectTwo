@@ -25,13 +25,18 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 @import "general";
 
+h2 {
+    @include fontSize(40);
+}
+
 .wrapper {
     width: 100%;
     max-width: 1140px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 75px 0;
 }
 
 // START OF HEADER SECTION STYLING
@@ -52,7 +57,6 @@ header {
 }
 
 .header__topRow__left {
-    @include fontSize(40);
     flex: 1 1 45%;
     align-self: baseline;
 }
@@ -80,6 +84,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: flex-start;
     height: 100%;
     line-height: 60px;
     h1 {
@@ -113,7 +118,6 @@ header {
     text-align: center;
     .wrapper {
         h2 {
-            @include fontSize(40);
             margin-bottom: 50px;
         }
     }
@@ -164,9 +168,6 @@ header {
 .welcome {
     background-color: $gold;
     .wrapper {
-        h2 {
-            @include fontSize(40);
-        }
         p {
             @include fontSize(24);
         }
@@ -188,6 +189,39 @@ header {
     background-color: #000000;
 }
 
-
-
 // END OF WELCOME SECTION
+
+// START OF SERVICES SECTION
+
+.services__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.services__content__cell {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        @include fontSize(26);
+        margin-bottom: 50px;
+    }
+    p {
+        @include fontSize(18);
+        font-family: "Lora", serif;
+        width: 60%;
+    }
+}
+
+// END OF SERVICES SECTION
+
+// START OF REVIEWS SECTION
+
+
+
+// END OF REVIEWS SECTION

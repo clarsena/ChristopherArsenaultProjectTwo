@@ -212,6 +212,10 @@ body {
   font-size: 1.6rem;
   font-family: "Lora", serif; }
 
+h2 {
+  font-size: 40px;
+  font-size: 4rem; }
+
 .wrapper {
   width: 100%;
   max-width: 1140px;
@@ -222,8 +226,11 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
-  padding: 50px 0; }
+  padding: 75px 0; }
 
 header {
   height: 100vh;
@@ -245,8 +252,6 @@ header {
   width: 100%; }
 
 .header__topRow__left {
-  font-size: 40px;
-  font-size: 4rem;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 45%;
   flex: 1 1 45%;
@@ -286,6 +291,8 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   height: 100%;
   line-height: 60px; }
   .header__bottomRow h1 {
@@ -312,8 +319,6 @@ header {
 .aboutUs {
   text-align: center; }
   .aboutUs .wrapper h2 {
-    font-size: 40px;
-    font-size: 4rem;
     margin-bottom: 50px; }
 
 .aboutUs__content {
@@ -381,9 +386,6 @@ header {
 
 .welcome {
   background-color: #E5BF4B; }
-  .welcome .wrapper h2 {
-    font-size: 40px;
-    font-size: 4rem; }
   .welcome .wrapper p {
     font-size: 24px;
     font-size: 2.4rem; }
@@ -406,3 +408,40 @@ header {
 
 .button--black {
   background-color: #000000; }
+
+.services__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+
+.services__content__cell {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .services__content__cell h3 {
+    font-size: 26px;
+    font-size: 2.6rem;
+    margin-bottom: 50px; }
+  .services__content__cell p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-family: "Lora", serif;
+    width: 60%; }
