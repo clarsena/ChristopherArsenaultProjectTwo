@@ -44,6 +44,11 @@ img {
     padding: 75px 0;
 }
 
+.aboutUs__content, .welcome__content, .services__content, .reviews__content, .events__content, .askQuestion__form, .stats__content, .blog__content, .footer__content, .footer__content__cell__gallery, .bottomNav {
+    display: flex;
+    width: 100%;
+}
+
 // START OF HEADER SECTION STYLING
 
 header {
@@ -129,11 +134,6 @@ header {
     }
 }
 
-.aboutUs__content {
-    display: flex;
-    width: 100%;
-}
-
 .aboutUs__content__gallery {
     flex: 0 1 50%;
     display: flex;
@@ -181,7 +181,6 @@ header {
 }
 
 .welcome__content {
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -200,8 +199,6 @@ header {
 // START OF SERVICES SECTION STYLING
 
 .services__content {
-    width: 100%;
-    display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -234,7 +231,6 @@ header {
 
 .reviews__content {
     margin-top: 50px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -248,11 +244,6 @@ header {
     p:nth-of-type(2) {
         font-style: italic;
     }
-}
-
-.events__content {
-    width: 100%;
-    display: flex;
 }
 
 .events__content__cell {
@@ -305,9 +296,7 @@ header {
 // START OF ASK QUESTION SECTION STYLING
 
 .askQuestion__form {
-    display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
     input[type='text'] {
         margin: 50px 0;
@@ -330,8 +319,6 @@ header {
 }
 
 .stats__content {
-    width: 100%;
-    display: flex;
     justify-content: space-around;
 }
 
@@ -359,8 +346,6 @@ header {
 // START OF BLOG SECTION STYLING
 
 .blog__content {
-    width: 100%;
-    display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
@@ -382,3 +367,97 @@ header {
 }
 
 // END OF BLOG SECTION STYLING
+
+// START OF FOOTER SECTION STYLING
+
+footer {
+    background-color: $black;
+    color: #FFFFFF;
+    .wrapper {
+        padding-bottom: 25px;
+        > p {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-family: "Raleway", sans-serif;
+            @include fontSize(14);
+        }
+    }
+}
+
+.footer__content {
+    justify-content: space-between;
+}
+
+.footer__content__cell {
+    width: 30%;
+    h3 {
+        @include fontSize(26);
+        margin-bottom: 25px;
+    }
+    li {
+        @include fontSize(18);
+        margin-bottom: 10px;
+        i {
+            margin-right: 10px;
+        }
+        a {
+            color: #FFFFFF;
+            text-transform: none;
+        }
+    }
+    p {
+        @include fontSize(18);
+        line-height: 25px;
+    }
+}
+
+.emailSubscribe {
+    width: 100%;
+    position: relative;
+}
+
+.emailSubscribe__email {
+    width: 80%;
+    @include fontSize(14);
+    padding: 5px 0 5px 15px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.emailSubscribe__submit {
+    color: #908E8E;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    @include fontSize(12);
+    bottom: 7px;
+    right: 24%;
+}
+
+.footer__content__cell__gallery {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__content__cell__gallery__cell {
+    width: 22%;
+    margin-bottom: 10px;
+}
+
+.bottomNav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
+    h2 {
+        margin-bottom: 25px;
+    }
+}
+
+.nav__bottom {
+    width: 55%;
+}
+
+// END OF FOOTER SECTION STYLING
