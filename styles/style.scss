@@ -355,3 +355,30 @@ header {
 }
 
 // END OF STATS SECTION STYLING
+
+// START OF BLOG SECTION STYLING
+
+.blog__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.blog__content__cell {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        text-transform: none;
+        @include fontSize(20);
+        margin: 20px 0;
+    }
+}
+
+.readMore {
+    @include fontSize(14);
+    color: $orange;
+}
+
+// END OF BLOG SECTION STYLING
