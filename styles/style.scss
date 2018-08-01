@@ -32,7 +32,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 // START OF HEADER SECTION STYLING
 
-header {
+.header {
     height: 100vh;
     @include sectionBackground('../assets/image-1.jpeg');
     color: #FFFFFF;
@@ -68,6 +68,12 @@ header {
         @include fontSize (20);
         padding: 5px;
         font-weight: 600;
+        border-bottom: 2px solid transparent;
+        transition: all 0.4s ease-in;
+        &:hover {
+            color: $orange;
+            border-color: $orange;
+        }
     }
 }
 
@@ -218,12 +224,12 @@ header {
     p {
         @include fontSize(18);
         margin-top: 35px;
-    }
-    p:nth-of-type(1) {
-        width: 55%;
-    }
-    p:nth-of-type(2) {
-        font-style: italic;
+        &:nth-of-type(1) {
+            width: 55%;
+        }
+        &:nth-of-type(2) {
+            font-style: italic;
+        }
     }
 }
 
@@ -279,6 +285,10 @@ header {
 // END OF EVENTS SECTION STYLING
 
 // START OF ASK QUESTION SECTION STYLING
+
+.askQuestion {
+    text-align: center;
+}
 
 .askQuestion__form {
     flex-direction: column;
