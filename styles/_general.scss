@@ -3,11 +3,6 @@ $gold: #E5BF4B;
 $orange: #DA331D;
 $grey: #D2CFCF;
 
-@mixin fontSize($sizeValue) {
-    font-size: $sizeValue * 1px;
-    font-size: ($sizeValue/10) * 1rem;
-}
-
 @mixin sectionBackground($path) {
 	background-image: url($path);
 	background-size: cover;
@@ -29,7 +24,7 @@ h1, h2, h3, h4, a, button {
 }
 
 h2 {
-    @include fontSize(40);
+    font-size: 4.0rem;
 }
 
 p {
@@ -45,7 +40,7 @@ a {
 }
 
 body {
-    @include fontSize(16);
+    font-size: 1.6rem;
     font-family: "Lora", serif;
 }
 
@@ -62,4 +57,30 @@ img {
     align-items: center;
     margin: 0 auto;
     padding: 75px 0;
+}
+
+@media (max-width: 1170px) {
+
+    .wrapper {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.button {
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    letter-spacing: 4.0px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    width: 170px;
+    color: #FFFFFF;
+    &--orange {
+        background-color: $orange;
+    }
+    &--black {
+        background-color: #000000;
+    }
 }

@@ -1,142 +1,11 @@
-@media (max-width: 1170px) {
-    .wrapper {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .aboutUs__content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .aboutUs__content__gallery {
-        flex-basis: 100%;
-        justify-content: center;
-    }
-
-    .aboutUs__content__gallery__cell {
-        flex-basis: 35%;
-    }
-
-   .aboutUs__content__text {
-       flex-basis: 100%;
-       margin-top: 25px;
-       p {
-           margin: 25px 0;
-       }
-   }
-
-   .reviews__content {
-        p {
-            &:nth-of-type(1) {
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media (max-width: 1050px) {
-    .events__content__cell__overlay {
-        h2 {
-            @include fontSize(30);
-        }
-        p {
-            @include fontSize(14);
-        }
-    }
-}
-
-@media (max-width: 880px) {
-
-    .header__bottomRow {
-        align-self: center;
-        text-align: center;
-        align-items: center;
-        line-height: 40px;
-        h2 {
-            margin: 15px 0;
-        }
-    }
-
-    .events__content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .events__content__cell {
-        flex-basis: 100%;
-    }
-
-    .events__content__cell__overlay {
-        h2 {
-            @include fontSize(40);
-        }
-        p {
-            @include fontSize(18);
-        }
-    }
-
-    .askQuestion__form {
-        input[type='text'] {
-            width: 100%;
-        }
-    }
-}
-
 @media (max-width: 785px) {
-    .aboutUs__content__gallery__cell {
-        flex-basis: 60%;
-    }
 
-    .services__content__cell {
-        flex-basis: 100%;
-        margin-bottom: 25px;
-        p {
-            width: 90%;
-        }
-        &:first-child {
-            order: 1;
-        }
-        &:nth-child(2) {
-            order: 4;
-        }
-        &:nth-child(3) {
-            order: 2;
-        }
-        &:nth-child(4) {
-            order: 3;
-        }
-        h3 {
-            margin-bottom: 25px;
-        }
-    }
-
-    .stats__content {
-        flex-wrap: wrap;
-    }
-
-    .stats__content__cell {
-        width: calc(50% - 20px);
-        text-align: center;
-        margin: 20px 10px;
-    }
-
-    .blog__content {
+    .footer-content {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .blog__content__cell {
-        width: 100%;
-        margin-bottom: 25px;
-    }
-
-    .footer__content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer__content__cell {
+    .footer-content__cell {
         width: 95%;
         justify-content: center;
         text-align: center;
@@ -146,10 +15,19 @@
         }
     }
 
-    .nav__bottom {
+    .email-subscribe__email {
+        width: 65%;
+    }
+
+    .email-subscribe__submit {
+        right: 20%;
+    }
+
+    .nav__wrapped {
         width: 100%;
         justify-content: center;
         flex-wrap: wrap;
         line-height: 35px;
     }
-}
+
+} /* END OF MAX-WDITH 785PX */
