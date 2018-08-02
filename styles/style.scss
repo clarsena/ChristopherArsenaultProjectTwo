@@ -91,10 +91,10 @@
 	.header-nav-menu__hamburger-menu {
 		display: none;
 		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
+        top: 0;
+        right: 0;
 		bottom: 0;
+		left: 0;
 		background: rgba(0,0,0,0.99);
         color: #FFFFFF;
         height: 100vh;
@@ -153,7 +153,6 @@
     justify-content: space-between;
     margin: 20px 50px;
     &__heading {
-        font-size: 2.6rem;
         margin-top: 30px;
     }
 }
@@ -164,9 +163,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    &__heading {
-        font-size: 2.6rem;
-    }
     &__body {
         font-size: 2.4rem;
     }
@@ -240,7 +236,6 @@
     justify-content: center;
     align-items: center;
     &__heading {
-        font-size: 2.6rem;
         margin-bottom: 50px;
     }
     &__body {
@@ -301,11 +296,23 @@
     }
 }
 
-.reviews-content__image:before {
-    content: "\f095";
-    font-family: "Font Awesome 5 Free";
-    display: inline-block;
-    padding-right: 6px;
+.reviews-content__image {
+    position: relative;
+}
+
+.reviews-content__image-icon {
+    font-size: 3.0rem;
+    position: absolute;
+    top: 40%;
+    &--left {
+        left: -75px;
+    }
+    &--right {
+        right: -75px;
+    }
+    &:hover {
+        color: $orange;
+    }
 }
 
 @media (max-width: 1170px) {
@@ -544,7 +551,6 @@
 .footer-content__cell {
     width: calc((100% / 3) - 25px);
     &__heading {
-        font-size: 2.6rem;
         margin-bottom: 25px;
     }
     &__body {
@@ -614,4 +620,36 @@
 
 // END OF FOOTER SECTION STYLING
 
-@import "media";
+@media (max-width: 785px) {
+
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-content__cell {
+        width: 95%;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .email-subscribe__email {
+        width: 65%;
+    }
+
+    .email-subscribe__submit {
+        right: 20%;
+    }
+
+    .nav__wrapped {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        line-height: 35px;
+    }
+
+} /* END OF MAX-WDITH 785PX */
