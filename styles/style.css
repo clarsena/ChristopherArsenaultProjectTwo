@@ -845,7 +845,13 @@ img {
 
 .contact-info__link {
   color: #FFFFFF;
-  text-transform: none; }
+  text-transform: none;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+  .contact-info__link:hover {
+    color: #DA331D;
+    border-color: #DA331D; }
 
 .email-subscribe {
   width: 100%;
