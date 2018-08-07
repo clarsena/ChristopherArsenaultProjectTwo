@@ -303,7 +303,7 @@ img {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg); }
 
-.header-nav, .about-us-content, .welcome-content, .services-content, .reviews-content, .events-content, .ask-question-form, .stats-content, .blog-content, .footer-content, .instagram-gallery, .footer-nav, .social-icons {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,7 +799,20 @@ img {
     font-weight: 600; }
   .blog-content__cell__link {
     font-size: 1.4rem;
-    color: #DA331D; }
+    color: #DA331D;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; }
+    .blog-content__cell__link:hover .link-arrows {
+      margin-left: 15px;
+      color: #E5BF4B; }
+    .blog-content__cell__link:hover {
+      color: #E5BF4B; }
+
+.link-arrows {
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
 
 @media (max-width: 785px) {
   .blog-content {
@@ -910,6 +923,8 @@ img {
   position: absolute;
   top: 30%;
   right: 1%; }
+  .social-icons__link:nth-child(2) {
+    margin: 50px 0; }
   .social-icons__item {
     font-size: 2.5rem;
     color: #FFFFFF;
@@ -921,8 +936,6 @@ img {
     .social-icons__item:hover {
       color: #DA331D;
       border-color: #DA331D; }
-    .social-icons__item:nth-child(2) {
-      margin: 50px 0; }
 
 @media (max-width: 1235px) {
   .social-icons {
@@ -936,9 +949,9 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 50px; }
-    .social-icons__item {
+    .social-icons__link {
       margin: 0 25px; }
-      .social-icons__item:nth-child(2) {
+      .social-icons__link:nth-child(2) {
         margin: 0 25px; }
   .footer-nav {
     margin-bottom: 25px; } }

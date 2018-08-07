@@ -515,7 +515,19 @@
     &__link {
         font-size: 1.4rem;
         color: $orange;
+        transition: all 0.3s ease-in;
+        &:hover .link-arrows {
+            margin-left: 15px;
+            color: $gold;
+        }
+        &:hover {
+            color: $gold;
+        }
     }
+}
+
+.link-arrows {
+    transition: all 0.3s ease-in;
 }
 
 @media (max-width: 785px) {
@@ -632,6 +644,11 @@
     position: absolute;
     top: 30%;
     right: 1%;
+    &__link {
+        &:nth-child(2) {
+            margin: 50px 0;
+        }
+    }
     &__item {
         font-size: 2.5rem;
         color: #FFFFFF;
@@ -641,9 +658,6 @@
         &:hover {
             color: $orange;
             border-color: $orange;
-        }
-        &:nth-child(2) {
-            margin: 50px 0;
         }
     }
 }
@@ -657,7 +671,7 @@
         width: 100%;
         justify-content: center;
         margin-bottom: 50px;
-        &__item {
+        &__link {
             margin: 0 25px;
             &:nth-child(2) {
                 margin: 0 25px;
