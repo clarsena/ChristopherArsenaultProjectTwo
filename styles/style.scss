@@ -2,7 +2,7 @@
 @import "general";
 @import "animations";
 
-.header-nav, .about-us-content, .welcome-content, .services-content, .reviews-content, .events-content, .ask-question-form, .stats-content, .blog-content, .footer-content, .instagram-gallery, .footer-nav, .social-icons {
+.flex {
     display: flex;
     width: 100%;
 }
