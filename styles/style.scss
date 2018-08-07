@@ -331,8 +331,9 @@
 
 .events-content__cell {
     flex: 0 1 calc(100% / 3);
-    &:nth-of-type(2) {
-        position: relative;
+    position: relative;
+    &:hover .events-content__overlay {
+        display: flex;
     }
     &__image {
         height: 100%;
@@ -341,7 +342,7 @@
 
 .events-content__overlay {
 	position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
 	width: 100%;
 	top: 0;

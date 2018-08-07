@@ -637,17 +637,18 @@ img {
 .events-content__cell {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 calc(100% / 3);
-  flex: 0 1 calc(100% / 3); }
-  .events-content__cell:nth-of-type(2) {
-    position: relative; }
+  flex: 0 1 calc(100% / 3);
+  position: relative; }
+  .events-content__cell:hover .events-content__overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .events-content__cell__image {
     height: 100%; }
 
 .events-content__overlay {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
